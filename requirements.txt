@@ -1,0 +1,6 @@
+django
+django-summernote
+django-otp
+qrcode
+django-pwa
+django-admin-honeypot
