@@ -1,6 +1,8 @@
 # django-blogiee
 A Django based Blog App with Progressive Web App Support
 
+![logo](https://github.com/codekushi/django-blogiee/blob/master/blog/static/icons/Django-Blogiee.png)
+
 ## Dependencies used
 - django
 - django-summernote
