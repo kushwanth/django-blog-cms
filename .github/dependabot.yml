@@ -3,7 +3,7 @@
 
 version: 2
 updates:
-  - package-ecosystem: "pip3"
+  - package-ecosystem: "pip"
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
