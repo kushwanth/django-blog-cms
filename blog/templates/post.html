@@ -11,7 +11,7 @@
       height: 9px;
     }
 </style>
-<header class="jumbotron" style="background-color: #66ff99; color: #004de6;">
+<header class="jumbotron" style="background-color: blue; color: green;">
     <div class="container">
                     <h3 class="h2"><strong>Posts</strong></h3>
                     </div>
@@ -20,7 +20,7 @@
     <div class="row">
         <div class="col-md-8 mt-3 left">
             {% for post in post_list %}
-            <div class="shadow-none card mb-4" style="background-color: #bfbfbf; color: #0E0D45;">
+            <div class="shadow-none card mb-4" style="background-color: green; color: blue;">
                 <div class="card-body">
                     <h3 class="card-title">{{ post.title }}</h3>
                     <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
