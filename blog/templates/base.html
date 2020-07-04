@@ -43,7 +43,6 @@ function darkmode() {
     <div class="container-fluid">
       <a class="navbar-brand" href="{% url 'home' %}">Django Blogiee</a>
       <div class="nav justify-content-end">
-        <div class="d-inline"><a class="nav-link text-black font-weight-bold" href="https://github.com/codekushi">Github</a></div>
         <div class="d-inline"><a class="nav-link text-black font-weight-bold" href="{% url 'posts' %}">Posts</a></div>
       <div class="d-inline"><div class="custom-control custom-switch">
         <input type="checkbox" class="custom-control-input" onclick="darkmode()" id="dark">
@@ -54,6 +53,6 @@ function darkmode() {
 </nav>
 {% block content %}
 {% endblock content %}
-<footer class="fixed-bottom">Created by codekushi</footer>
+<footer class="fixed-bottom">enjoy the Blog</footer>
 </body>
 </html>
