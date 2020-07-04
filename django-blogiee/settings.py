@@ -137,6 +137,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
+#progressive web app data
 PWA_APP_NAME = 'Django Blogiee'
 PWA_APP_DESCRIPTION = "PWA for django Blogiee"
 PWA_APP_THEME_COLOR = '#0A0302'
