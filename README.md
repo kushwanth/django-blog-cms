@@ -36,4 +36,4 @@ python manage.py runserver
 ```
 ## Now you can see the home page by going to 127.0.0.1:8000
 
-### A detailed blog post on customization will be updated soon
+### A detailed blog post on customization is found at [Customizing Django-Blogiee](https://hackingandprogramming.com/articles/customize-django-blogiee)
