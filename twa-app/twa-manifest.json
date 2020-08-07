@@ -1,0 +1,27 @@
+{
+  "packageId": "com.djangoblogiee.twa",
+  "host": "django-blogiee.herokuapp.com",
+  "name": "Django Blogiee",
+  "launcherName": "Blog",
+  "display": "fullscreen",
+  "themeColor": "#000000",
+  "navigationColor": "#000000",
+  "backgroundColor": "#FFFFFF",
+  "enableNotifications": false,
+  "startUrl": "/",
+  "iconUrl": "https://django-blogiee.herokuapp.com/static/icons/Django-Blogiee.1b98d36d50a7.png",
+  "maskableIconUrl": "https://django-blogiee.herokuapp.com/static/icons/Django-Blogiee.1b98d36d50a7.png",
+  "monochromeIconUrl": "https://django-blogiee.herokuapp.com/static/icons/Django-Blogiee.1b98d36d50a7.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "1",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://django-blogiee.herokuapp.com/manifest.json",
+  "fallbackType": "customtabs",
+  "appVersion": "1"
+}

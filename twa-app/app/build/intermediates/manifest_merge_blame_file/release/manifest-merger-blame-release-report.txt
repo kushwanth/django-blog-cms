@@ -1,0 +1,241 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3    Copyright 2019 Google Inc. All Rights Reserved.
+4
+5     Licensed under the Apache License, Version 2.0 (the "License");
+6     you may not use this file except in compliance with the License.
+7     You may obtain a copy of the License at
+8
+9         http://www.apache.org/licenses/LICENSE-2.0
+10
+11     Unless required by applicable law or agreed to in writing, software
+12     distributed under the License is distributed on an "AS IS" BASIS,
+13     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14     See the License for the specific language governing permissions and
+15     limitations under the License.
+16-->
+17<!--
+18 The "package" attribute is rewritten by the Gradle build with the value of applicationId.
+19     It is still required here, as it is used to derive paths, for instance when referring
+20     to an Activity by ".MyActivity" instead of the full name. If more Activities are added to the
+21     application, the package attribute will need to reflect the correct path in order to use
+22     the abbreviated format.
+23-->
+24<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+25    package="com.djangoblogiee.twa"
+26    android:versionCode="1"
+27    android:versionName="1" >
+28
+29    <uses-sdk
+30        android:minSdkVersion="19"
+30-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml
+31        android:targetSdkVersion="29" />
+31-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml
+32
+33    <queries>
+33-->[com.google.androidbrowserhelper:androidbrowserhelper:1.3.2] /home/kushwanth/.gradle/caches/transforms-2/files-2.1/ce3213dae9639c0fada057349098ffd4/androidbrowserhelper-1.3.2/AndroidManifest.xml:26:5-34:15
+34        <intent>
+34-->[com.google.androidbrowserhelper:androidbrowserhelper:1.3.2] /home/kushwanth/.gradle/caches/transforms-2/files-2.1/ce3213dae9639c0fada057349098ffd4/androidbrowserhelper-1.3.2/AndroidManifest.xml:27:9-33:18
+35            <action android:name="android.intent.action.VIEW" />
+35-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:89:17-68
+35-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:89:25-66
+36
+37            <category android:name="android.intent.category.BROWSABLE" />
+37-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:91:17-77
+37-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:91:27-75
+38
+39            <data android:scheme="https" />
+39-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:92:17-93:54
+39-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:92:23-45
+40        </intent>
+41    </queries>
+42
+43    <application
+43-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:27:5-129:19
+44        android:allowBackup="true"
+44-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:28:9-35
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.1.0] /home/kushwanth/.gradle/caches/transforms-2/files-2.1/03736cf4bc3669a69d502627b70a527e/core-1.1.0/AndroidManifest.xml:24:18-86
+46        android:icon="@mipmap/ic_launcher"
+46-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:29:9-43
+47        android:label="@string/appName"
+47-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:30:9-40
+48        android:supportsRtl="true"
+48-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:31:9-35
+49        android:theme="@style/Theme.LauncherActivity" >
+49-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:32:9-54
+50        <meta-data
+50-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:34:9-36:58
+51            android:name="asset_statements"
+51-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:35:13-44
+52            android:resource="@string/assetStatements" />
+52-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:36:13-55
+53        <meta-data
+53-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:39:13-41:58
+54            android:name="web_manifest_url"
+54-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:40:17-48
+55            android:value="@string/webManifestUrl" />
+55-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:41:17-55
+56        <meta-data
+56-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:44:9-46:52
+57            android:name="twa_generator"
+57-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:45:13-41
+58            android:value="@string/generatorApp" />
+58-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:46:13-49
+59
+60        <activity
+60-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:48:9-95:20
+61            android:name="com.google.androidbrowserhelper.trusted.LauncherActivity"
+61-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:48:19-90
+62            android:label="@string/launcherName" >
+62-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:49:13-49
+63            <meta-data
+63-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:50:13-51:53
+64                android:name="android.support.customtabs.trusted.DEFAULT_URL"
+64-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:50:24-85
+65                android:value="@string/launchUrl" />
+65-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:51:17-50
+66            <meta-data
+66-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:53:13-55:58
+67                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR"
+67-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:54:17-83
+68                android:resource="@color/colorPrimary" />
+68-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:55:17-55
+69            <meta-data
+69-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:57:13-59:61
+70                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR"
+70-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:58:17-87
+71                android:resource="@color/navigationColor" />
+71-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:59:17-58
+72            <meta-data
+72-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:61:13-62:54
+73                android:name="android.support.customtabs.trusted.SPLASH_IMAGE_DRAWABLE"
+73-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:61:24-95
+74                android:resource="@drawable/splash" />
+74-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:62:17-52
+75            <meta-data
+75-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:64:13-65:60
+76                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_BACKGROUND_COLOR"
+76-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:64:24-104
+77                android:resource="@color/backgroundColor" />
+77-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:65:17-58
+78            <meta-data
+78-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:67:13-68:71
+79                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_FADE_OUT_DURATION"
+79-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:67:24-105
+80                android:value="@integer/splashScreenFadeOutDuration" />
+80-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:68:17-69
+81            <meta-data
+81-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:70:13-71:60
+82                android:name="android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY"
+82-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:70:24-97
+83                android:value="@string/providerAuthority" />
+83-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:71:17-58
+84            <meta-data
+84-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:73:13-97
+85                android:name="android.app.shortcuts"
+85-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:73:24-60
+86                android:resource="@xml/shortcuts" />
+86-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:73:61-94
+87            <meta-data
+87-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:75:13-76:56
+88                android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY"
+88-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:75:24-91
+89                android:value="@string/fallbackType" />
+89-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:76:17-53
+90            <meta-data
+90-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:79:13-80:45
+91                android:name="android.support.customtabs.trusted.DISPLAY_MODE"
+91-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:79:24-86
+92                android:value="immersive" />
+92-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:80:17-42
+93
+94            <intent-filter>
+94-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:83:13-86:29
+95                <action android:name="android.intent.action.MAIN" />
+95-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:84:17-69
+95-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:84:25-66
+96
+97                <category android:name="android.intent.category.LAUNCHER" />
+97-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:85:17-77
+97-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:85:27-74
+98            </intent-filter>
+99            <intent-filter android:autoVerify="true" >
+99-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:88:13-94:29
+99-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:88:28-53
+100                <action android:name="android.intent.action.VIEW" />
+100-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:89:17-68
+100-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:89:25-66
+101
+102                <category android:name="android.intent.category.DEFAULT" />
+102-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:90:17-76
+102-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:90:27-73
+103                <category android:name="android.intent.category.BROWSABLE" />
+103-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:91:17-77
+103-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:91:27-75
+104
+105                <data
+105-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:92:17-93:54
+106                    android:host="@string/hostName"
+106-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:93:21-52
+107                    android:scheme="https" />
+107-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:92:23-45
+108            </intent-filter>
+109        </activity>
+110        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
+110-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:97:9-90
+110-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:97:19-87
+111        <activity
+111-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:99:9-100:62
+112            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
+112-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:99:19-97
+113            android:configChanges="orientation|screenSize" />
+113-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:100:13-59
+114
+115        <provider
+115-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:102:9-110:20
+116            android:name="androidx.core.content.FileProvider"
+116-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:103:13-62
+117            android:authorities="@string/providerAuthority"
+117-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:104:13-60
+118            android:exported="false"
+118-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:106:13-37
+119            android:grantUriPermissions="true" >
+119-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:105:13-47
+120            <meta-data
+120-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:107:13-109:53
+121                android:name="android.support.FILE_PROVIDER_PATHS"
+121-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:108:17-67
+122                android:resource="@xml/filepaths" />
+122-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:109:17-50
+123        </provider>
+124
+125        <service
+125-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:112:9-127:20
+126            android:name="com.google.androidbrowserhelper.trusted.DelegationService"
+126-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:113:13-85
+127            android:enabled="@bool/enableNotification"
+127-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:114:13-55
+128            android:exported="@bool/enableNotification" >
+128-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:115:13-56
+129            <meta-data
+129-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:118:17-120:70
+130                android:name="android.support.customtabs.trusted.SMALL_ICON"
+130-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:119:21-81
+131                android:value="@drawable/ic_notification_icon" />
+131-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:120:21-67
+132
+133            <intent-filter>
+133-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:123:13-126:29
+134                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
+134-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:124:17-105
+134-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:124:25-103
+135
+136                <category android:name="android.intent.category.DEFAULT" />
+136-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:90:17-76
+136-->/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/AndroidManifest.xml:90:27-73
+137            </intent-filter>
+138        </service>
+139    </application>
+140
+141</manifest>

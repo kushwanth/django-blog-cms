@@ -1,0 +1,5 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target" : { "namespace": "android_app", "package_name": "com.djangoblogiee.twa",
+                   "sha256_cert_fingerprints": ["60:F8:D8:DC:90:81:E5:80:B6:39:2C:EE:CF:57:ED:FD:F7:B7:25:91:71:B9:5C:AD:F6:BA:BA:81:53:85:4D:3D"] }
+    }]

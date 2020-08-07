@@ -1,0 +1,8 @@
+*.github
+*/.github
+*.github/
+_config.yml
+*.pyc
+venv
+__pycache__
+local_settings.py

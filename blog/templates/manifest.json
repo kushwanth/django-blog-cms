@@ -1,0 +1,2 @@
+{% load static %}
+{ "name": "Django Blogiee", "short_name": "Django Blogiee", "description": "PWA for django Blogiee", "start_url": "/", "display": "standalone", "scope": "/", "orientation": "any", "background_color": "#ffffff", "theme_color": "#000000", "status_bar": "default", "icons": [{"src": "{% static "icons/Django-Blogiee.png" %}", "sizes": "512x512", "purpose": "any maskable"}], "dir": "ltr", "lang": "en-US" }

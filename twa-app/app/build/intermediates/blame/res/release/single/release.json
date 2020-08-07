@@ -1,0 +1,98 @@
+[
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/drawable-xxhdpi_ic_notification_icon.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/drawable-xxhdpi/ic_notification_icon.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/drawable-xxxhdpi_ic_notification_icon.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/drawable-xxxhdpi/ic_notification_icon.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/drawable-hdpi_splash.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/drawable-hdpi/splash.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/drawable-xxhdpi_splash.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/drawable-xxhdpi/splash.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_maskable.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/mipmap-mdpi/ic_maskable.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/drawable-xhdpi_splash.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/drawable-xhdpi/splash.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/drawable-hdpi_ic_notification_icon.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/drawable-hdpi/ic_notification_icon.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_maskable.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/mipmap-hdpi/ic_maskable.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/xml_shortcuts.xml.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/xml/shortcuts.xml"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/drawable-xxxhdpi_splash.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/drawable-xxxhdpi/splash.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/xml_filepaths.xml.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/xml/filepaths.xml"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/drawable-xhdpi_ic_notification_icon.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/drawable-xhdpi/ic_notification_icon.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/drawable-mdpi_ic_notification_icon.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/drawable-mdpi/ic_notification_icon.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/mipmap-xhdpi_ic_maskable.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/mipmap-xhdpi/ic_maskable.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/raw_web_app_manifest.json.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/raw/web_app_manifest.json"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_maskable.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/mipmap-xxxhdpi/ic_maskable.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/drawable-mdpi_splash.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/drawable-mdpi/splash.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_maskable.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/mipmap-xxhdpi/ic_maskable.png"
+    },
+    {
+        "merged": "/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/kushwanth/django-blogiee(local)/twa-app/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    }
+]

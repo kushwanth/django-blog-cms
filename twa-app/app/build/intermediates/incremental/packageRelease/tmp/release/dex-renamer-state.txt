@@ -1,0 +1,4 @@
+#Fri Aug 07 14:45:58 IST 2020
+base.0=/home/kushwanth/django-blogiee(local)/twa-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
