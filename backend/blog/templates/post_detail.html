@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block amptags %}
+<link rel="canonical" href="{% url 'post_detail_amp' object.slug %}">
+{% endblock %}
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9 left">
+        <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+        <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
+        <p class="card-text ">{{ object.content | safe }}</p>
+      </div>
+       {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+       </div>
+       </div>
+{% endblock content %}

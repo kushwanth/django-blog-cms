@@ -1,0 +1,7 @@
+django
+django-summernote
+django-otp
+qrcode
+django-admin-honeypot
+djangorestframework
+django-cors-headers

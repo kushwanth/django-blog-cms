@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    body {
+        font-family: "sans-serif";
+    .head_text {
+        color: white;
+    }
+h1 {
+font-family: "monospace";
+}
+    .card {
+        box-shadow: 0 16px 48px #E3E7EB;
+    }
+    .jumbotron{
+      height: 9px;
+    }
+</style>
+<header class="jumbotron" style="background-color: white; color: black;">
+    <div class="container">
+                    <h1 class="h2"> Welcome to <strong>Django Blogiee</strong></h1>
+                    <p class="h6">A Django based Blog &nbsp</p>
+                </div>
+</header>
+<div class="container">
+<h2 style="text-align: center;">Features of this blog</h2>
+<ul class="">
+  <li class="">Django Summernote Editor</li>
+  <li class="">Django Admin Honeypot</li>
+  <li class="">Django OTP with QRcode</li>
+  <li class="">Dark Mode</li>
+  <li class="">Progressive Web App(TWA under development)</li>
+  <li class="">Custom Admin Dashboard</li>
+  <li class="">Acclerated Mobile Pages(AMP)</li>
+  </ul>
+</div>
+{% endblock content %}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Django Blogiee</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="application-name" content="Django Blogiee PWA">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Django Blogiee PWA">
+<link rel="apple-touch-icon" href="/static/icons/Django-Blogiee.png">
+<link rel="icon" href="/static/icons/Django-Blogiee.png">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script type="application/javascript">
+    // Initialize the service worker
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/serviceworker.js', {
+            scope: '/'
+        }).then(function (registration) {
+            // Registration was successful
+            console.log('django-blogiee: ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+            // registration failed :(
+            console.log('django-blogiee: ServiceWorker registration failed: ', err);
+        });
+    }
+</script>
+  {%block amptags %}{% endblock %}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <style>
+  body {
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #fdfdfd;
+  }
+  .shadow {
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+  }
+  .btn-danger {
+    color: #fff;
+    background-color: #f00000;
+    border-color: #dc281e;
+  }
+  .dark-mode {
+    background-color: #191b20;
+    color: white;
+  }
+  .fixed-bottom {
+    background-color: inherit;
+    text-align: center;
+  }
+</style>
+<script type="text/javascript">
+function darkmode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+</script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'home' %}">Django Blogiee</a>
+      <div class="nav justify-content-end">
+        <div class="d-inline"><a class="nav-link text-black font-weight-bold" href="{% url 'posts' %}">Posts</a></div>
+      <div class="d-inline"><div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" onclick="darkmode()" id="dark">
+        <label class="custom-control-label" for="dark" style="color: black;">Dark Mode</label>
+      </div></div>
+    </div>
+  </div>
+</nav>
+{% block content %}
+{% endblock content %}
+<footer class="fixed-bottom">enjoy the Blog</footer>
+</body>
+</html>

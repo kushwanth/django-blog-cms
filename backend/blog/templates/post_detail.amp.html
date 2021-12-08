@@ -1,0 +1,153 @@
+{% load ampimg %}
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ object.title }}</title>
+    <meta name="description" content="{{ object.metades}}" />
+    <meta property="og:title" content="{{ object.title }}">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <style amp-custom>
+    @font-face {
+    font-family: Handlee;
+    src: url(https://hackingandprogramming.com/static/fonts/Handlee/Handlee-Regular.ttf); }
+    body { font-family: Handlee; }
+    footer { text-align: center;
+      height: 21px;
+      font-size: 1.2em;
+      background-color: #66ff99;
+    color: #004de6;}
+    #banner {
+    background-color: #66ff99;
+    color: #004de6;
+    font-size: 1em;
+    width: 100%;
+    text-align: center; }
+button {     background-color: #66ff99;
+    color: #004de6;
+    font-size: 17px;
+    text-decoration: none;
+    border: none;
+    border-radius: 29px;}
+#amp_page { font-size: 18px; }
+.headerbar {
+  background-color: #004de6;
+  color: #66ff99;
+  height: 50px
+top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.site-name {
+  font-size:18px;
+  font-family: monospace;
+  margin: auto;
+}
+#banner {
+  margin-top: 50px;
+}
+.hamburger {
+  padding-left: 25px;
+}
+.sidebar {
+  font-size: 29px;
+  padding: 60px;
+  margin: 0;
+}
+.sidebar > li {
+  list-style: none;
+  margin-bottom:10px;
+}
+.sidebar li a {
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.close-sidebar {
+  font-size: 1.8em;
+  padding-left: 25px;
+}
+#storycontent {text-align: center; }
+.storyimages { min-width: 100%;
+margin: 0 auto; }
+   </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <link rel="canonical" href="{% url 'post_detail' object.slug %}">
+    <link rel="manifest" href="/manifest.json">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "NewsArticle",
+  "headline": "{{ object.title }}",
+  "description": "{{ object.metades }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{% url 'post_detail' object.slug %}"
+},
+  "image": {
+    "@type": "ImageObject",
+    "url": "/media/{{ object.pic }}",
+    "width": "100%",
+    "height": "69%"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Admin Django Blogiee"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Django Blogiee",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/static/logo.png",
+      "width": "30px",
+      "height": "30px"
+    }
+  },
+  "datePublished": "{{ post.created_on }}",
+  "dateModified": "{{ post.updated_on }}",
+  "mentions": "{{ object.source }}"
+}
+</script>
+  </head>
+  <body>
+<amp-auto-ads type="adsense" data-ad-client="ca-pub-8121786117370181"></amp-auto-ads>
+<header class="headerbar">
+  <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
+  <div class="site-name">Django Blogiee</div>
+</header>
+<amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+  <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕</div>
+  <ul class="sidebar">
+     <li><a href="{% url 'home' %}">Home</a></li>
+       <li><a href="{% url 'posts' %}">Posts</a></li>
+       </ul></amp-sidebar>
+<div class="container" id="banner"><h1>{{ object.title }}</h1></div>
+<amp-img src="/media/{{ object.pic }}" alt="story image" width="720" height="480" layout="responsive"></amp-img>
+<div class="container"><h3 style="text-align: center;">{{ news.author.first_name }} {{ news.author.last_name }} | {{ news.created_on }}</h3>
+<p id="amp_page">For Dark mode and better view on desktop, Go to our <span><a href="{% url 'post_detail' object.slug %}"><button class="btn btn-outline-primary">Desktop page</button></a></span></p>
+        <p id="storycontent">{{ object.content | ampimg | safe }}</p>
+        <h4>Source: {{ object.source }}</h4>
+       </div>
+    <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+    {
+      "vars" : {
+        "gtag_id": "",
+        "config" : {
+          "UA-00000000-0": {
+            "groups": "default"
+          }
+        }
+      }
+    }
+    </script>
+    </amp-analytics>
+    <footer>&copy; django blogiee</footer>
+  </body>
+</html>
