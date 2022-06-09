@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="jumbotron bg-white">
+    <div class="container">
+       <h3 class="display-4"><strong>Posts</strong></h3>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mt-3 left">
+            {% for post in post_list %}
+            <div class="shadow-none card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">{{ post.title }}</h3>
+                    <p class="card-text text-muted h6">{{ post.author.first_name}} {{post.author.last_name}} | {{ post.created_on}} </p>
+                    <p class="card-text">{{ post.content|slice:":200"| safe }}</p>
+                    <a href="{% url 'post_detail' post.slug  %}" class="btn btn-outline-dark ">Read More &rarr;</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+ {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+</div>
+</div>
+{% if is_paginated %}
+  <nav aria-label="Page navigation conatiner"></nav>
+  <ul class="pagination justify-content-center">
+    {% if page_obj.has_previous %}
+    <li><a href="?page={{ page_obj.previous_page_number }}" class="btn btn-outline-info">&laquo; PREV </a></li>
+    {% endif %}
+    {% if page_obj.has_next %}
+    <li><a href="?page={{ page_obj.next_page_number }}" class="btn btn-outline-info"> NEXT &raquo;</a></li>
+
+    {% endif %}
+  </ul>
+{% endif %}
+{%endblock%}

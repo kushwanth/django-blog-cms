@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
+  <title>Django Blogiee</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="application-name" content="Django Blogiee PWA">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Django Blogiee PWA">
+<link rel="apple-touch-icon" href="{% static '/icons/Django-Blogiee.png' %}">
+<link rel="icon" href="{% static '/icons/Django-Blogiee.png' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script type="application/javascript">
+    // Initialize the service worker
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/serviceworker.js', {
+            scope: '/'
+        }).then(function (registration) {
+            // Registration was successful
+            console.log('django-blogiee: ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+            // registration failed :(
+            console.log('django-blogiee: ServiceWorker registration failed: ', err);
+        });
+    }
+</script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-lg bg-white">
+  <div class="container-fluid">
+      <a class="navbar-brand font-weight-bolder text-dark text-monospace" href="{% url 'home' %}">Django Blogiee</a>
+      <div class="nav justify-content-end">
+        <div class="d-inline"><a class="nav-link text-dark font-weight-bold" href="{% url 'posts' %}">Posts</a></div>
+    </div>
+  </div>
+</nav>
+{% block content %}
+{% endblock content %}
+<footer class="footer mt-auto">
+  <p class="h3 text-center">&copy; Django Blogiee</p>
+</footer>
+</body>
+</html>
