@@ -25,7 +25,7 @@ A Blog based on Django where users can add, edit, publish and delete posts with 
 - Install Python3
 - clone the Repo
 ```
-git clone https://github.com/kushwanth/django-blogiee.git
+git clone https://github.com/kushwanth/django-blog-cms.git
 ```
 - install Dependencies
 ```
@@ -42,7 +42,7 @@ python manage.py runserver
 
 #### django_admin_honeypot app is an extention of [django-admin-honeypot 1.1.0](https://github.com/dmpayton/django-admin-honeypot) project
 
-## Customizing Django Blogiee
+## Customizing Django blog-cms
 
 ### open the templates folder in the blog folder and open home.html file with your favourite editor
 ```
@@ -74,9 +74,9 @@ admin.empty_value_display = '**Empty**'
 
 ```
 {
-    "name": "Django Blogiee",
-    "short_name": "Django Blogiee",
-    "description": "PWA for django Blogiee",
+    "name": "Django Blog CMS",
+    "short_name": "Django Blog CMS",
+    "description": "PWA for Django Blog CMS",
     "start_url": "/",
     "display": "standalone",
     "scope": "/",
